@@ -1,6 +1,13 @@
 # Mapreduce with MRJob
 
-1. Login to the cluster.
+1. Login to the cluster:
+```console
+    $ ssh sshuser@hdfs_name.azurehdinsight.net
+```
+where:<br/>
+    sshuser - is default name created by the Azure<br/>
+    hdfs_name - is the name provided in configuration step of cluster
+
 2. Install mrjob:
 ```console
     $ sudo pip install mrjob
@@ -9,9 +16,9 @@
 ```console
     $ scp -r .\example_2\* sshuser@hdfs_name.azurehdinsight.net:/home/user/
 ```
-where:
-    sshuser - is default name created by the Azure
-    hdfs_name - is the name provided in configuration step of cluster
+where:<br/>
+    sshuser - is default name created by the Azure<br/>
+    hdfs_name - is the name provided in configuration step of cluster<br/>
 
 4. Run script only local:
 ```console

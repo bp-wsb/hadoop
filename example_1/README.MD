@@ -8,7 +8,8 @@ where:
     sshuser - is default name created by the Azure
     hdfs_name - is the name provided in configuration step of cluster
 
-2. Login to the cluster.
+2. Login to the cluster:
+
 3. From cluster shell copy data.txt to hdfs:
 ```console
     $ hdfs dfs -copyFromLocal /home/user_name/data.txt /user_name/data.txt
