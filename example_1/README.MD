@@ -4,17 +4,23 @@
 ```console
     $ scp -r .\example_1\* sshuser@hdfs_name.azurehdinsight.net:/home/user/
 ```
-where:
-    sshuser - is default name created by the Azure
+where:<br/>
+    sshuser - is default name created by the Azure<br/>
     hdfs_name - is the name provided in configuration step of cluster
 
 2. Login to the cluster:
+```console
+    $ ssh sshuser@hdfs_name.azurehdinsight.net
+```
+where:<br/>
+    sshuser - is default name created by the Azure<br/>
+    hdfs_name - is the name provided in configuration step of cluster<br/>
 
 3. From cluster shell copy data.txt to hdfs:
 ```console
     $ hdfs dfs -copyFromLocal /home/user_name/data.txt /user_name/data.txt
 ```
-where:
+where:<br/>
     user_name - is the name provided in configuration step of cluster
 
 4. Run script:

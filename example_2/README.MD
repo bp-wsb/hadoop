@@ -25,7 +25,7 @@ where:<br/>
     $ python hotel.py data.txt
 ```
 
-Additional steps:
+## Additional steps:
 5. From cluster shell copy data.txt to hdfs:
 ```console
     $ hdfs dfs -copyFromLocal /tmp/example_2/data.txt /user/data.txt
