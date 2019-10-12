@@ -4,9 +4,9 @@
 ```console
     $ ssh sshuser@hdfs_name.azurehdinsight.net
 ```
-where:<br/>
-    sshuser - is default name created by the Azure<br/>
-    hdfs_name - is the name provided in configuration step of cluster
+**where:**<br/>
+* sshuser - is default name created by the Azure<br/>
+* hdfs_name - is the name provided in configuration step of cluster
 
 2. Install mrjob:
 ```console
@@ -16,9 +16,9 @@ where:<br/>
 ```console
     $ scp -r .\example_2\* sshuser@hdfs_name.azurehdinsight.net:/home/user/
 ```
-where:<br/>
-    sshuser - is default name created by the Azure<br/>
-    hdfs_name - is the name provided in configuration step of cluster<br/>
+**where:**<br/>
+* sshuser - is default name created by the Azure<br/>
+* hdfs_name - is the name provided in configuration step of cluster<br/>
 
 4. Run script only local:
 ```console
@@ -28,7 +28,7 @@ where:<br/>
 ## Additional steps:
 5. From cluster shell copy data.txt to hdfs:
 ```console
-    $ hdfs dfs -copyFromLocal /tmp/example_2/data.txt /user/data.txt
+    $ hdfs dfs -copyFromLocal ~/data.txt /user/data.txt
 ```
 6. Run script on cluster:
 ```console
