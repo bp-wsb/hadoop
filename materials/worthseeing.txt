@@ -1,0 +1,9 @@
+BigData:
+    HBase - https://www.youtube.com/watch?v=VRD775iqAko
+
+Introduction to NoSQL:
+    https://www.youtube.com/watch?v=qI_g07C_Q5I
+
+Microservices achritecture:
+    https://www.youtube.com/watch?v=wgdBVIX9ifA
+    https://www.youtube.com/watch?v=CZ3wIuvmHeM

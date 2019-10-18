@@ -1,0 +1,18 @@
+Programming:
+    Tuple:
+        https://www.tutorialspoint.com/python/python_tuples.htm
+        http://www.pythonlearn.com/html-009/book011.html
+
+    Yield:
+        https://chyla.org/blog/Python_-_Generatory/
+        https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+
+Unix:
+    Pipes:
+        https://whatis.techtarget.com/definition/pipe
+        https://www.geeksforgeeks.org/piping-in-unix-or-linux/
+
+    Bash Commands:
+        http://www.informit.com/blogs/blog.aspx?b=2e1a39cd-e73b-4f8d-82f2-5f9b769132e1
+    HDFS DFS Commands:
+        https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-common/FileSystemShell.html
