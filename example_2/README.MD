@@ -1,36 +1,39 @@
 # Mapreduce with MRJob
 
-1. Login to the cluster:
+1. From Azure portal copy cluster ssh address.
+    Grupy zasobów  -> "name of the group" (ex bigdata) -> enter to the "HDInsight cluster" -> Properties -> Copy Secure Shell (SSH).
+
+2. From local shell copy example_2 to cluster:
 ```console
-    $ ssh sshuser@hdfs_name.azurehdinsight.net
+    $ scp -r ./example_2/ ssh_address:/home/sshuser/
 ```
 **where:**<br/>
 * sshuser - is default name created by the Azure<br/>
-* hdfs_name - is the name provided in configuration step of cluster
+* ssh_address - address from the first step.
 
-2. Install mrjob:
+3. Login to the cluster:
+```console
+    $ ssh ssh_address
+```
+**where:**<br/>
+* ssh_address - address from the first step.
+
+4. Install mrjob:
 ```console
     $ sudo pip install mrjob
 ```
-3. From local computer copy example_2 to local master fs tmp:
-```console
-    $ scp -r .\example_2\* sshuser@hdfs_name.azurehdinsight.net:/home/user/
-```
-**where:**<br/>
-* sshuser - is default name created by the Azure<br/>
-* hdfs_name - is the name provided in configuration step of cluster<br/>
 
-4. Run script only local:
+5. Run script only local:
 ```console
-    $ python hotel.py data.txt
+    $ python ./example2/ratingcount.py data.txt
 ```
 
 ## Additional steps:
-5. From cluster shell copy data.txt to hdfs:
+6. From cluster shell copy data.txt to hdfs:
 ```console
-    $ hdfs dfs -copyFromLocal ~/data.txt /user/data.txt
+    $ hdfs dfs -copyFromLocal ./example_2/data.txt /user/data.txt
 ```
-6. Run script on cluster:
+7. Run script on cluster:
 ```console
     $ python hotel.py wasb:///data.txt -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
 ```
