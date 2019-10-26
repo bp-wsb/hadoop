@@ -25,7 +25,7 @@
 
 5. Run script only local:
 ```console
-    $ python ./example2/ratingcount.py data.txt
+    $ python ./example_2/ratingcount.py data.txt
 ```
 
 ## Additional steps:
@@ -35,6 +35,6 @@
 ```
 7. Run script on cluster:
 ```console
-    $ python hotel.py wasb:///data.txt -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
+    $ python ./example_2/ratingcount.py wasb:///data.txt -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
 ```
 
