@@ -1,0 +1,5 @@
+HDFS DFS Commands:
+        https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-common/FileSystemShell.html
+
+PiG Latin:
+    https://www.cloudera.com/tutorials/beginners-guide-to-apache-pig/.html

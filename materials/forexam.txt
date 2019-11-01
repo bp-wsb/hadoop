@@ -1,0 +1,21 @@
+The bare minimum to learn, if you want to pass the exam:
+
+HDFS:
+    https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
+    https://community.cloudera.com/t5/Community-Articles/Understanding-basics-of-HDFS-and-YARN/ta-p/248860
+    https://www.youtube.com/watch?v=4Gfl0WuONMY
+    https://www.youtube.com/watch?v=GJYEsEEfjvk
+
+HBASE:
+    https://hbase.apache.org/book.html#datamodel
+    https://www.youtube.com/watch?v=VRD775iqAko
+
+If you want not only pass the exam but learn more about data and hadoop
+I recommend these books:
+
+Hadoop:
+    Hadoop: The Definitive Guide
+NoSQL:
+    NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence
+    Seven NoSQL Databases in a Week
+    NoSQL, NewSQL i BigData. Bazy danych następnej generacji
