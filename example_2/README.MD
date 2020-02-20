@@ -35,6 +35,6 @@
 ```
 7. Run script on cluster:
 ```console
-    $ python ./example_2/ratingcount.py wasb:///data.txt -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
+    $ python ./example_2/ratingcount.py wasb:///user/data.txt -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar --hadoop-tmp-dir wasb:////tmp
 ```
 
